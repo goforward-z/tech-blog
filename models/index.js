@@ -1,3 +1,4 @@
+const User = require('./User');
 const Post = require('./Post');
 const Comment = require('./Comment');
 
@@ -32,4 +33,4 @@ Post.hasMany(Comment, {
 
 });
 
-module.exports = { Post, Comment };
+module.exports = { User,Post, Comment };
