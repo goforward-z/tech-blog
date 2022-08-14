@@ -1,3 +1,4 @@
+const Post = require('./Post');
 const Comment = require('./Comment');
 
 // users can make many posts 
@@ -28,6 +29,7 @@ User.hasMany(Comment, {
 // users can make many posts 
 Post.hasMany(Comment, {
     foreignKey: 'post_id'
+
 });
 
-module.exports = { Comment };
+module.exports = { Post, Comment };
